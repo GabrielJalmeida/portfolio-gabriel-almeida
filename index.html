@@ -23,7 +23,7 @@
   <div class="header-status"><i></i><span>Software Developer</span></div>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span></span><span></span><em class="sr-only">Open menu</em></button>
   <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
-    <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#about">About</a><a class="nav-cv" href="assets/Gabriel-Almeida-Resume-EN.pdf" target="_blank" rel="noreferrer">CV ↗</a><a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -61,7 +61,7 @@
   <div class="hero-bottom">
     <a href="#work" class="text-link">Selected work <span>↘</span></a>
     <p class="hero-scroll-hint"><span>Scroll to transform</span><span>hero → work</span></p>
-    <p class="hero-availability"><i></i> Open to development opportunities</p>
+    <p class="hero-availability"><span><i></i> Open to development opportunities</span><small>Praia Grande, SP · Brazil</small></p>
   </div>
 </section>
 
@@ -273,18 +273,50 @@
 </section>
 
 <section class="process" id="process" aria-labelledby="process-title" data-theme="black">
-  <div class="process-head"><p class="kicker">How I work / 01—05</p><h2 id="process-title">Structure before polish.</h2><p>Not a rigid methodology. A repeatable way to reduce ambiguity before adding complexity.</p></div>
+  <div class="process-head">
+    <p class="kicker">How I work / linked to evidence</p>
+    <h2 id="process-title">From ambiguity<br>to evidence.</h2>
+    <p>I do not follow a ceremonial methodology. I use a small loop that helps me understand what needs to exist, structure it, and verify whether it actually works.</p>
+  </div>
   <div class="process-thread" aria-hidden="true"><i></i><b></b></div>
-  <ol class="process-track"><li><span>01</span><strong>Frame</strong><p>Make the real problem explicit.</p></li><li><span>02</span><strong>Model</strong><p>Define rules, data and constraints.</p></li><li><span>03</span><strong>Build</strong><p>Turn the model into working software.</p></li><li><span>04</span><strong>Verify</strong><p>Test behavior, not just appearance.</p></li><li><span>05</span><strong>Refine</strong><p>Improve what reality exposes.</p></li></ol>
+  <ol class="process-track process-track--evidence">
+    <li><span>01</span><strong>Understand</strong><p>Clarify the user need, constraints and business rules before choosing the implementation.</p><small class="process-proof">Seen in: Inventory · Bella Napoli</small></li>
+    <li><span>02</span><strong>Structure</strong><p>Turn the problem into routes, data, boundaries and behavior that can be explained.</p><small class="process-proof">Seen in: Lumina · Inventory</small></li>
+    <li><span>03</span><strong>Verify</strong><p>Use tests, CI, accessibility checks and real-device feedback to find what the first implementation missed.</p><small class="process-proof">Seen in: Lumina · Ponto Comum</small></li>
+  </ol>
+  <aside class="ai-workflow-note" aria-label="AI-assisted workflow">
+    <span>AI-assisted workflow</span>
+    <p>I use AI tools to accelerate prototyping, implementation and iteration. I remain responsible for defining requirements, validating behavior, testing results and deciding what belongs in the final product.</p>
+  </aside>
 </section>
 
 <section class="about" id="about" aria-labelledby="about-title" data-theme="about">
   <div class="about-title">
-    <p class="kicker">About / current direction</p>
-    <h2 id="about-title">I am building depth,<br><em>not collecting tools.</em></h2>
-    <div class="about-signature" aria-hidden="true"><span>GA</span><i></i><small>1995 → 2026 / still building</small></div>
+    <p class="kicker">About / path into software</p>
+    <h2 id="about-title">Learning by building<br><em>real systems.</em></h2>
+    <p class="about-context">I’m early in my software career — and I take the work seriously. I came to development after years of dealing with customers, goals, stock, routines and problems that rarely arrived perfectly defined.</p>
+    <div class="about-signature" aria-hidden="true"><span>GA</span><i></i><small>people → operations → software</small></div>
   </div>
-  <div class="about-body"><p class="about-lead">I’m Gabriel Almeida, a software developer focused on backend systems, APIs, automation and web products.</p><p>The profile I’m building is based on a simple idea: vague problems become useful software when they are given structure, constraints and a way to be verified.</p><p>I’m studying Analysis and Systems Development while building projects in public and deliberately increasing the engineering depth behind each one.</p><div class="about-now"><span>CURRENTLY</span><p><b>Primary direction</b> Backend development</p><p><b>Building depth in</b> Python · APIs · databases · web</p><p><b>Studying</b> Analysis & Systems Development</p><p><b>Based in</b> Praia Grande, SP · Brazil</p></div></div>
+
+  <div class="about-body">
+    <p class="about-lead">I’m Gabriel Almeida, a software developer focused on backend systems, APIs, automation and web products.</p>
+    <p>Before software, I spent years in customer-facing sales and retail work. That taught me to communicate clearly, work with constraints, organize processes and solve problems where the answer was not already written down.</p>
+    <p>Today I’m studying Analysis and Systems Development at Fatec Praia Grande and moving that same problem-solving mindset into code, data and systems that can be tested and improved.</p>
+
+    <div class="career-path" aria-label="Career path">
+      <article class="career-step"><span>01</span><div><strong>People & real constraints</strong><p>Sales, customer service, goals, stock and day-to-day operational problem solving.</p></div></article>
+      <article class="career-step"><span>02</span><div><strong>Operational thinking</strong><p>Planning routes, priorities and time while adapting when reality changed the plan.</p></div></article>
+      <article class="career-step"><span>03</span><div><strong>Shift to software</strong><p>ADS at Fatec, Python, APIs, databases and the decision to build software professionally.</p></div></article>
+      <article class="career-step"><span>04</span><div><strong>Building in public</strong><p>Projects that turn learning into evidence: Lumina Skin, Ponto Comum, Bella Napoli and Inventory.</p></div></article>
+    </div>
+
+    <div class="learning-now">
+      <span>LEARNING NOW</span>
+      <div><p><b>Backend fundamentals</b><small>Python · APIs · service boundaries</small></p><p><b>Data modelling</b><small>Relational thinking · SQL · PostgreSQL</small></p><p><b>Verification</b><small>Testing · CI · software architecture</small></p><p><b>Academic path</b><small>ADS · Fatec Praia Grande</small></p></div>
+    </div>
+
+    <div class="about-now"><span>CURRENT DIRECTION</span><p><b>Focus</b> Backend development · APIs · automation</p><p><b>Based in</b> Praia Grande, SP · Brazil</p><p><b>Availability</b> Development opportunities · remote / hybrid</p></div>
+  </div>
 </section>
 
 <section class="contact contact-cinematic" id="contact" aria-labelledby="contact-title" data-theme="black">

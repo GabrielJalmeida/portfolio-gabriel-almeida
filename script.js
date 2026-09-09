@@ -355,7 +355,7 @@ document.documentElement.classList.add('js');
     item.addEventListener('mouseenter', () => {
       if (!processNode || reducedMotion.matches) return;
       processNode.style.animation = 'none';
-      processNode.style.left = `${index * 23.75}%`;
+      processNode.style.left = `${processItems.length > 1 ? (index / (processItems.length - 1)) * 95 : 0}%`;
     });
     item.addEventListener('mouseleave', () => {
       if (!processNode || reducedMotion.matches) return;
